@@ -35,15 +35,28 @@
     >
       Watch anywhere. Cancel anytime. Stream your favorite movies with Moviemeld.
     </p>
-    <a
-      href="register.php"
-      class="inline-block px-10 py-4 rounded-md font-semibold text-lg shadow-lg
-             bg-red-500 text-white
-             hover:bg-red-600 transition transform hover:scale-105
-             dark:bg-red-700 dark:hover:bg-red-800
-             eyecare:bg-yellow-600 eyecare:hover:bg-yellow-700"
-    >
-      Get Started
-    </a>
+<?php if (!isset($_SESSION['user'])): ?>
+  <a
+    href="register.php"
+    class="inline-block px-10 py-4 rounded-md font-semibold text-lg shadow-lg
+           bg-red-500 text-white
+           hover:bg-red-600 transition transform hover:scale-105
+           dark:bg-red-700 dark:hover:bg-red-800
+           eyecare:bg-yellow-600 eyecare:hover:bg-yellow-700"
+  >
+    Get Started
+  </a>
+<?php else: ?>
+  <a
+    href="movies.php"
+    class="inline-block px-10 py-4 rounded-md font-semibold text-lg shadow-lg
+           bg-green-500 text-white
+           hover:bg-green-600 transition transform hover:scale-105
+           dark:bg-green-700 dark:hover:bg-green-800
+           eyecare:bg-yellow-600 eyecare:hover:bg-yellow-700"
+  >
+    View Movies
+  </a>
+<?php endif; ?>
   </div>
 </section>
