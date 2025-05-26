@@ -1,3 +1,4 @@
+<?php echo '
 <section
   class="relative py-20 px-6 bg-gray-50 dark:bg-gray-900 eyecare:bg-yellow-50 text-gray-900 dark:text-gray-100 eyecare:text-gray-700"
 >
@@ -63,4 +64,5 @@
       </p>
     </div>
   </div>
-</section>
+</section>'; 
+?>
