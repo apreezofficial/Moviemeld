@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+error_reporting(0);//change to 1 in production
 ?>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth" data-theme="dark">
@@ -9,7 +9,6 @@ error_reporting(0);
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="./font-awesome/css/all.css">
-    <script src="tailwind.js"></script>
     <script>
       // Tailwind dark mode config
       tailwind.config = {
@@ -146,8 +145,7 @@ error_reporting(0);
     </div>
   </div>
 <?php else: ?>
-        <!-- Single Login/Signup Button -->
-        <a
+<a
           href="login.php"
           class="px-4 py-2 rounded-md border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition flex items-center space-x-2"
         >
@@ -179,15 +177,11 @@ error_reporting(0);
     <!-- Suggestions populate here -->
   </ul>
 </div>
-
-<!-- Font Awesome for loader -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
 <script>
   const input = document.getElementById('mobile-search-input');
   const suggestionsBox = document.getElementById('mobile-suggestions');
   const loader = document.getElementById('search-loader');
-  const apiKey = 'c1d5147f376f0b22cfc5166221d21c3b';
+  const apiKey = 'your_api_key';
   let controller;
   let debounceTimer;
 
@@ -334,7 +328,6 @@ error_reporting(0);
 
   loadTheme();
 
-  // Eyecare mode styles (add in JS for demo or add to your Tailwind config/custom CSS)
   const style = document.createElement('style');
   style.innerHTML = `
   .eyecare {

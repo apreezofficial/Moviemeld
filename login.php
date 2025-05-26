@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(0);//set to one in production so as to view errors
 require 'pdo.php';  // PDO connection
 if (isset($_SESSION['user']['id'])) {
     // If a redirect_url is set, use it and unset it after redirect
@@ -36,12 +37,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'username' => $user['username'],
                 'email' => $user['email'],
                 'name' => $user['name'],
-                'profile_pic' => $user['profile_pic'] ?? 'assets/img/default-profile.png'
+                'profile_pic' => $user['profile_pic'] ?? 'https://apcodesphere.vercel.app/logo.jpg'
             ];
 
             // Redirect to stored URL or dashboard
             $redirect = $_SESSION['redirect_url'] ?? 'index.php';
-            unset($_SESSION['redirect_url']); // clear it after using
+            unset($_SESSION['redirect_url']); // clear the sessiob after using
             header("Location: $redirect");
             exit;
         } else {
@@ -50,7 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-<!-- The rest of your HTML form remains unchanged -->
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>

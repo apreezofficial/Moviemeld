@@ -1,6 +1,6 @@
 <?php
 $movieId = $_GET['id'] ?? '1098006'; // fallback ID
-$apiKey = 'c1d5147f376f0b22cfc5166221d21c3b'; // your TMDB API key
+$apiKey = 'your_api_key'; 
 
 $data = null;
 $videoKey = null;
@@ -118,8 +118,6 @@ if (!empty($videoData['results'])) {
       <p class="text-red-500 text-xl font-bold">Movie not found or failed to load.</p>
     </div>
   <?php endif; ?>
-
-  <!-- JS for Theme + Player -->
   <script>
   
     function showPlayer() {

@@ -23,7 +23,6 @@ include 'navbar.php';
 
   <!-- Preload for Logo and Fonts -->
   <link rel="preload" as="image" href="/logo.jpg" />
-  <!-- Add font preload if custom fonts used -->
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />

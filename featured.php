@@ -7,7 +7,7 @@
 
     <!-- Movie Slider -->
     <div id="movie-slider" class="flex overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
-      <!-- JS will inject movie cards here -->
+      <!-- js will inject the movie cards her -->
     </div>
 
     <!-- View All Button -->
@@ -23,7 +23,7 @@
   const movieSlider = document.getElementById('movie-slider');
 
   async function fetchTrendingMovies() {
-    const apiKey = 'c1d5147f376f0b22cfc5166221d21c3b';
+    const apiKey = 'your_api_key';
     const res = await fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${apiKey}`);
     const data = await res.json();
 

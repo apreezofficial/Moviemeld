@@ -1,7 +1,7 @@
 <?php
 session_start();
 require 'pdo.php';
-
+error_reporting(0);
 $errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

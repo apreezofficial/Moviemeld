@@ -74,7 +74,7 @@
     });
   });
 
-  // Optional: open first FAQ by default
+  // To open first FAQ by default
   window.addEventListener('load', () => {
     if(faqButtons.length) {
       faqButtons[0].click();

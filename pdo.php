@@ -1,10 +1,10 @@
 <?php
 // PDO.php
-$host = 'localhost';
-$db   = 'preciou3_movie';
-$user = 'preciou3_admin';
-$pass = 'Apcodesphere001';
-$charset = 'utf8mb4';
+$host = 'yourhosyname';//usually lovalhost in cpanel
+$db   = 'yourdatabasenam';
+$user = 'yourusername';
+$pass = 'yourpassword';
+$charset = 'utf8mb4';//set to this charset to allow emojis (mostly for usernames, mocies description and the rest)
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [

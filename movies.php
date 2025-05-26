@@ -4,19 +4,15 @@ echo '<div style="height:50px"></div>';
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
-<!-- Required Meta Tags -->
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<!-- SEO Meta Tags -->
 <title>Watch Trending Movies & Discover Genres | MovieMeld</title>
 <meta name="description" content="Explore the latest and trending movies with MovieMeld. Dive into your favorite genres, trailers, and fresh movie releases — all in one place." />
 <meta name="keywords" content="MovieMeld, movies, latest movies, trending films, trailers, discover genres, loml, preciousadedokun, HD streaming" />
 <meta name="author" content="MovieMeld" />
 <link rel="canonical" href="https://lomlreal.preciousadedokun.com.ng/movies.php" />
 
-<!-- Open Graph / Facebook / LinkedIn -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://lomlreal.preciousadedokun.com.ng/movies.php" />
 <meta property="og:title" content="Watch Trending Movies & Discover Genres | MovieMeld" />
@@ -54,6 +50,14 @@ echo '<div style="height:50px"></div>';
       "url": "https://lomlreal.preciousadedokun.com.ng/logo.jpg"
     }
   }
+  "publisher": {
+    "@type": "Person",
+    "name": "Precious Adedokun",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://preciousadedokun.com.ng/images/ap.jpg"
+    }
+  }
 }
 </script>
   <script>
@@ -85,7 +89,6 @@ echo '<div style="height:50px"></div>';
   <div class="max-w-7xl mx-auto px-4 py-6">
     <div class="flex justify-between items-center mb-6">
       <h1 class="text-3xl font-bold">All Movies</h1>
-      <!-- Put your theme toggle or navbar here -->
     </div>
 
     <!-- Filters -->
@@ -119,7 +122,7 @@ echo '<div style="height:50px"></div>';
 
   <script>
     (function () {
-      const apiKey = 'c1d5147f376f0b22cfc5166221d21c3b';
+      const apiKey = 'your_api_key';
       let page = 1;
       let loading = false;
       const movieList = document.getElementById('movie-list');

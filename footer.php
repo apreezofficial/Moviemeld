@@ -73,6 +73,7 @@
   </div>
 </footer>
 <script>
+  //clone this script from my portfokio page just to give a typewriter effect on scroll
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll('#loadin');
 
