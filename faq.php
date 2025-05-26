@@ -1,9 +1,11 @@
+<?php echo'
 <section class="max-w-4xl mx-auto px-6 py-12">
   <h2 class="text-3xl font-bold text-center mb-10 text-gray-900 dark:text-gray-100 eyecare:text-[#586e75]">
     Frequently Asked Questions
   </h2>
   <div class="space-y-4">
     <!-- FAQ Item 1 -->
+  
     <div class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm">
       <button aria-expanded="false" class="w-full flex justify-between items-center px-6 py-4 bg-gray-100 dark:bg-gray-800 eyecare:bg-[#f6f1e7] focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors duration-300">
         <span class="font-semibold text-gray-900 dark:text-gray-100 eyecare:text-[#586e75] text-left">How do I watch a movie?</span>
@@ -49,7 +51,8 @@
     </div>
   </div>
 </section>
-
+';
+?>
 <script>
   const faqButtons = document.querySelectorAll('section button');
 
