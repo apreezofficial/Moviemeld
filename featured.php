@@ -1,5 +1,5 @@
 <!-- Trending Movies Section -->
-<section class="relative w-full py-16 px-6 md:px-12 bg-white dark:bg-[#0D0D0D] eyecare:bg-[#fdf6e3] transition-colors duration-500">
+<?php echo '<section class="relative w-full py-16 px-6 md:px-12 bg-white dark:bg-[#0D0D0D] eyecare:bg-[#fdf6e3] transition-colors duration-500">
   <div class="max-w-screen-xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white eyecare:text-[#586e75] mb-10 text-center">
       Trending Now on <span class="text-red-600 dark:text-[#FF6B00]">MovieMeld</span>
@@ -17,7 +17,7 @@
       </a>
     </div>
   </div>
-</section>
+</section>'; ?>
 <!-- Script to Fetch Movies -->
 <script>
   const movieSlider = document.getElementById('movie-slider');
