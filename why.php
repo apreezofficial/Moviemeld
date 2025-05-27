@@ -1,3 +1,4 @@
+<?php echo '
 <section class="py-12 px-6 max-w-7xl mx-auto
                 bg-white text-gray-900
                 dark:bg-gray-900 dark:text-gray-100
@@ -44,3 +45,4 @@
 
   </div>
 </section>
+  ';?>
